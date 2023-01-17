@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.coin-box {
+  height: 90vh;
+  background-color: var(--darkgrey);
+  width: 19rem;
+  height: 19rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1.1px solid transparent;
+  position: relative;
+}
+.logo-div {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  width: 20%;
+  margin-right: 0.75rem;
+  margin-left: 0.1rem;
+}
+.data-div {
+  position: absolute;
+  top: 4.5rem;
+  margin-top: 1.7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0.2rem !important;
+}
+.symbol {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0rem;
+  margin-bottom: 0px;
+}
+
+.chip {
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  margin-right: 10rem;
+  border: 1px solid;
+}
+.chip p {
+  margin: 0;
+}
+
+.trends {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  padding: 0.35rem;
+  font-size: 2.3rem !important;
+}
+.up {
+  color: var(--yellow);
+  border-color: var(--green);
+}
+.down {
+  color: var(--yellow);
+  border-color: var(--red);
+}
+.up:hover {
+  background: var(--green);
+  color: var(--white);
+  transition: all 0.3s;
+}
+.down:hover {
+  background: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  position: absolute;
+  left: 11rem;
+}
+.rs {
+  padding-left: 3px;
+}
+.total {
+  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  opacity: 0.88;
+  margin-left: 0;
+}

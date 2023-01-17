@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 0px;
+}
+.big-heading {
+  padding-top: 1.5rem;
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.stroke:hover {
+  color: var(--black);
+  text-shadow: -1px -1px 0 rgb(231, 222, 222), 1px -1px 0 rgb(248, 243, 243),
+    -1px 1px 0 #fff, 1px 1px 0 #fff;
+  transition: all 0.25s;
+}
+
+.big-heading-blue {
+  color: var(--blue);
+}
+.big-heading-blue:hover {
+  color: var(--yellow);
+  transition: all 0.25s;
+}
+.big-heading-blue span {
+  color: var(--yellow);
+}
+.big-heading-blue:hover span {
+  color: var(--blue);
+}
+.img-box {
+  position: relative;
+  width: 40%;
+  height: 20%;
+  right: 1.5rem;
+  margin-top: 0.8 rem;
+}
+
+.phone {
+  display: block;
+  width: 60%;
+  height: 32rem;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  min-width: 250px;
+}
+
+.gradient {
+  position: absolute;
+  /* width: 46.5%; */
+  top: 4.5rem;
+  right: -3%;
+  height: auto;
+  object-fit: contain;
+  min-width: 14.5rem;
+}
+
+.para {
+  color: var(--grey);
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+.btn,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@media only screen and (max-width: 1200px) {
+  .big-heading {
+    font-size: 5rem;
+  }
+  .img-box {
+    width: 32%;
+  }
+  .phone {
+    /* width: 75%; */
+    height: auto;
+    min-width: 11.2rem;
+  }
+  .gradient {
+    min-width: 8rem;
+    height: auto;
+    top: 21rem;
+    right: -2.2rem;
+  }
+}
+
+.madeBy {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  .heading-container {
+    text-align: center;
+    width: 100%;
+  }
+  .big-heading {
+    font-size: 3rem;
+  }
+  .wrapper {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .gradient {
+    position: inherit;
+    width: 26.5%;
+    top: 3.9rem;
+    right: -1rem;
+    min-width: 11.2rem;
+  }
+  .button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 2rem 2rem;
+    margin: 3rem auto 0;
+    /* gap: 3rem; */
+  }
+}
+.phone {
+  min-width: 14rem;
+  margin: 0 -1.45rem;
+}
